@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hello , Hi} from './Hi';
+import Car from './Car';
 
 // or import React , {component} from 'react';
 
@@ -14,8 +15,13 @@ class App extends React.Component {
             <Hello />
             <Hi />
             <h2 className='myName'> Fariba Tavakoli</h2>
-        
+            <Car model = 'BMW' color ="red"/>
+            <Car model = 'ferarri' color ="black"/>
+            <Car model = 'bugatti' color ="blue">It'z is Amazing </Car>
             </>
+
+        
+           
         )
     }
 }

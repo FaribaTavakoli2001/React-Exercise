@@ -15,9 +15,10 @@ class Hi extends Component {
 }
 
 const Hello = () => {
+    const version = 18 ;
     return (
         <div>
-            <h2>Wellcome to React</h2>
+            <h2>Wellcome to React {version}</h2>
         </div>
     )
 }

@@ -8,11 +8,18 @@ class Hi extends Component {
             <div>
                 <h3>Hello world</h3>
             </div>
-            
             </>
         )
     }
 
 }
 
-export default Hi ;
+const Hello = () => {
+    return (
+        <div>
+            <h2>Wellcome to React</h2>
+        </div>
+    )
+}
+
+export  {Hi , Hello} ;

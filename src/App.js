@@ -1,5 +1,5 @@
 import React from 'react';
-import Hi from './Hi';
+import { Hello , Hi} from './Hi';
 
 // or import React , {component} from 'react';
 
@@ -11,6 +11,7 @@ class App extends React.Component {
             // <react.fragment>  <react.fragment/>
             <>
             <h1>React Exercises</h1>
+            <Hello />
             <Hi />
             <h2 className='myName'> Fariba Tavakoli</h2>
         

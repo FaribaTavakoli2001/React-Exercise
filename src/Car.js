@@ -18,9 +18,32 @@ class Car extends Component {
 const Vehicle = (props) => {
     return (
         <h2>
-            the model of my car is {props.model} and color is {props.color}.{props.children}.
+            the model of my car is {props.modele} and color is {props.colore}.{props.children}.
         </h2>
     )
 }
 
-export {Car , Vehicle} ;
+
+class NewCar extends Component{
+    constructor(){
+        super();
+        this.state = {
+            model : 'I20'
+        }
+    }
+    chnageHandeler = () => {
+        this.setState ({
+            model : '206'
+        })
+    }
+    render(){
+        return(
+            <div>
+                <h1>my car is old. my new Car is {this.state.model}</h1>
+                <button onClick={this.chnageHandeler}>change NewCar</button>
+                </div>
+        )
+    }
+}
+
+export {Car , Vehicle , NewCar} ;

@@ -20,7 +20,10 @@ class Counter extends Component {
 
 
     upThree = () => {
-        // this.upOne ;
+        this.upOne() ;
+        this.upOne() ;
+        this.upOne() ;
+
     }
 
     render() {
@@ -28,7 +31,7 @@ class Counter extends Component {
         return (
             <div>
                 <h1>{number}</h1>
-                <button onClick={this.upOne} >UP ONE</button>
+                <button onClick={this.upThree} >UP ONE</button>
             </div>
         );
     }

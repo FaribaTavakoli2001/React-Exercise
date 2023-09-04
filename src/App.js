@@ -1,6 +1,7 @@
 import React from 'react';
 import { Hello , Hi} from './Hi';
 import {Car , Vehicle , NewCar} from './Car';
+import Counter from './Counter';
 
 // or import React , {component} from 'react';
 
@@ -19,6 +20,8 @@ class App extends React.Component {
             <Vehicle modele = 'Queick' colore = 'wite'>That's my first Car </Vehicle>
             <Car model = 'bugatti' color ="blue">It'z is Amazing </Car>
             <NewCar />
+
+            <Counter />
             </>
 
         

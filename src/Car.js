@@ -24,26 +24,26 @@ const Vehicle = (props) => {
 }
 
 
-class NewCar extends Component{
-    constructor(){
+class NewCar extends Component {
+    constructor() {
         super();
         this.state = {
-            model : 'I20'
+            model: 'I20'
         }
     }
     chnageHandeler = () => {
-        this.setState ({
-            model : '206'
+        this.setState({
+            model: '206'
         })
     }
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <h1>my car is old. my new Car is {this.state.model}</h1>
+                <h3>my car is old. my new Car is {this.state.model}</h3>
                 <button onClick={this.chnageHandeler}>change NewCar</button>
-                </div>
+            </div>
         )
     }
 }
 
-export {Car , Vehicle , NewCar} ;
+export { Car, Vehicle, NewCar };

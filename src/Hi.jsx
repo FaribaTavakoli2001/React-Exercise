@@ -1,13 +1,17 @@
 import React , {Component} from 'react';
+import styled from 'styled-components';
 
+const MyDiv = styled.div`
+   background-color : blue;
+`
 class Hi extends Component {
     render(){
 
         return(
             <>
-            <div>
+            <MyDiv>
                 <h3>Hello world</h3>
-            </div>
+            </MyDiv>
             </>
         )
     }
@@ -17,9 +21,9 @@ class Hi extends Component {
 const Hello = () => {
     const version = 18 ;
     return (
-        <div>
+        <MyDiv>
             <h2>Wellcome to React {version}</h2>
-        </div>
+        </MyDiv>
     )
 }
 

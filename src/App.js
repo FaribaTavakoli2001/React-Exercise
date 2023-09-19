@@ -23,9 +23,10 @@ class App extends React.Component {
             <Car model = 'bugatti' color ="blue">It'z is Amazing </Car>
             <NewCar />
             <Counter />
-
-            <ClassEvent />
+            <br />
             <FunctionEvent />
+            <br />
+            <ClassEvent />
             </>
 
         

@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 class ClassEvent extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
+
+        this.input = React.createRef();
+
         this.state = {
             text : "",
             option : 'option1',
@@ -37,17 +40,28 @@ class ClassEvent extends Component {
 
     submitHandler = (event) => {
         event.preventDefault();
-        console.log(this.state.text)
-        console.log(this.state.option)
+        // console.log(this.state.text)
+        // console.log(this.state.option)
 
+    }
+
+    showRef = () =>{
+        console.log(this.input.current.value)
+    }
+
+
+    // گرفتن اینپوت در مونت کردن
+    componentDidMount(){
+        this.input.current.focus()
     }
     render() {
 
         const {text } = this.state;
 
         return (
+            <>
             <form onSubmit={this.submitHandler}>
-                <input type="text" value={text} onChange={this.changeHandler} />
+                <input ref={this.input} type="text" value={text} onChange={this.changeHandler} />
                <br />
                <br />
 
@@ -59,9 +73,16 @@ class ClassEvent extends Component {
 
                 </select>
                 <br />
-                <button type='submit'>Save</button>
+                <br />
+
+                <button onClick={this.showRef} type='submit'>Save</button>
+                <br/>
+                <br/>
+
             </form>
-        );
+                <button onClick={this.props.sayHello}>click</button>
+       </>
+                );
     }
 }
 

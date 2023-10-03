@@ -4,16 +4,33 @@ import {Car , Vehicle , NewCar} from './Car';
 import Counter from './Counter';
 import ClassEvent from './ClassEvent';
 import FunctionEvent from './FunctionEvent';
+import Login from './Login';
 
 // or import React , {component} from 'react';
 
 // class App extend component
 class App extends React.Component {
+    constructor(){
+        super();
+        this.state ={
+            text : 'Hi betch',
+        }
+    }
+
+    sayHello = () =>{
+        console.log(this.state.text)
+    }
+
     render(){
         // const header = <h1>React Exercises</h1>
         return (
             // <react.fragment>  <react.fragment/>
             <>
+            <Login />
+            <br/>
+            <br/>
+            <br/>
+
             <h1>React Exercises</h1>
             <Hello />
             <Hi />
@@ -26,7 +43,7 @@ class App extends React.Component {
             <br />
             <FunctionEvent />
             <br />
-            <ClassEvent />
+            <ClassEvent sayHello={this.sayHello}/>
             </>
 
         

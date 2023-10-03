@@ -5,6 +5,7 @@ import Counter from './Counter';
 import ClassEvent from './ClassEvent';
 import FunctionEvent from './FunctionEvent';
 import Login from './Login';
+import ErrorBoundary from './ErrorBoundary';
 
 // or import React , {component} from 'react';
 
@@ -43,7 +44,9 @@ class App extends React.Component {
             <br />
             <FunctionEvent />
             <br />
+            <ErrorBoundary>
             <ClassEvent sayHello={this.sayHello}/>
+            </ErrorBoundary>
             </>
 
         

@@ -19,6 +19,11 @@ class ClassEvent extends PureComponent {
         this.setState ({
             
         })
+
+        const random = Math.random();
+        if (random > 0.8){
+            throw new Error('this is an error');
+        }
         
     }
 
@@ -80,7 +85,7 @@ class ClassEvent extends PureComponent {
                 <br/>
 
             </form>
-                <button onClick={this.props.sayHello}>click</button>
+                <button onClick={this.clickHandler}>click</button>
        </>
                 );
     }

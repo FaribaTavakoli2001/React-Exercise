@@ -15,5 +15,5 @@ const FunctionEvent = () => {
     );
 };
 
-//پراپز و استست ها مقایسه
+//پراپز و استیت ها مقایسه
 export default React.memo(FunctionEvent);

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class ClassEvent extends Component {
+class ClassEvent extends PureComponent {
     constructor(props){
         super(props);
 

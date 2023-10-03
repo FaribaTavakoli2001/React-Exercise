@@ -15,4 +15,5 @@ const FunctionEvent = () => {
     );
 };
 
-export default FunctionEvent;
+//پراپز و استست ها مقایسه
+export default React.memo(FunctionEvent);

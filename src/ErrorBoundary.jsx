@@ -9,12 +9,12 @@ class ErrorBoundary extends Component {
         }
     }
 
-    componentDidCatch(error,info){
-        this.setState({
-            error:true,
-            errormessage: error,
-        })
-    }
+    // componentDidCatch(error,info){
+    //     this.setState({
+    //         error:true,
+    //         errormessage: error,
+    //     })
+    // }
 
 
 

@@ -5,7 +5,9 @@ import Counter from './Counter';
 import ClassEvent from './ClassEvent';
 import FunctionEvent from './FunctionEvent';
 import Login from './Login';
-import ErrorBoundary from './ErrorBoundary';
+// import ErrorBoundary from './ErrorBoundary';
+import Child from './Child';
+import NewChild from './NewChild';
 
 // or import React , {component} from 'react';
 
@@ -27,7 +29,7 @@ class App extends React.Component {
         return (
             // <react.fragment>  <react.fragment/>
             <>
-            <Login />
+            {/* <Login />
             <br/>
             <br/>
             <br/>
@@ -42,11 +44,14 @@ class App extends React.Component {
             <NewCar />
             <Counter />
             <br />
-            <FunctionEvent />
+            <FunctionEvent /> */}
             <br />
-            <ErrorBoundary>
-            <ClassEvent sayHello={this.sayHello}/>
-            </ErrorBoundary>
+            {/* <ErrorBoundary> */}
+            {/* <ClassEvent sayHello={this.sayHello}/> */}
+            {/* </ErrorBoundary> */}
+
+            <Child />
+            <NewChild/>
             </>
 
         
